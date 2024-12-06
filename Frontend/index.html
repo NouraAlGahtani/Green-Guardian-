@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Plant Detection System</h1>
+        <p>Identify plant species and get care tips</p>
+      </header>
+    
+      <nav>
+        <ul>
+          <li><a href="chat.html">Chat with Specialist</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+        </ul>
+      </nav>
+    
+      <main>
+        <section id="upload-section">
+          <h2>Upload Plant Image</h2>
+          <form id="upload-form">
+            <input type="file" id="plant-image" accept="image/*" required>
+            <button type="submit">Detect Plant</button>
+          </form>
+        </section>
+    
+        <section id="result-section" style="display: none;">
+          <h2>Detection Result</h2>
+          <p id="result-text">Processing...</p>
+          <img id="result-image" src="" alt="Uploaded Plant Image">
+          <div id="plant-details" style="display: none;">
+            <h3>Plant Details</h3>
+            <p id="water-percentage"></p>
+            <p id="care-tips"></p>
+          </div>
+        </section>
+      </main>
+</body>
+</html>
