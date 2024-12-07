@@ -3,44 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GreenGurdian</title>
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <header>
-        <h1>Plant Detection System</h1>
-        <p>Identify plant species and get care tips</p>
-      </header>
-    
-      <nav>
-        <ul>
-          <li><a href="chat.html">Chat with Specialist</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="register.html">Register</a></li>
-          <li><a href="leaderboard.html">Leaderboard</a></li>
-        </ul>
-      </nav>
-    
-      <main>
-        <section id="upload-section">
-          <h2>Upload Plant Image</h2>
-          <form id="upload-form">
-            <input type="file" id="plant-image" accept="image/*" required>
-            <button type="submit">Detect Plant</button>
-          </form>
-        </section>
-    
-        <section id="result-section" style="display: none;">
-          <h2>Detection Result</h2>
-          <p id="result-text">Processing...</p>
-          <img id="result-image" src="" alt="Uploaded Plant Image">
-          <div id="plant-details" style="display: none;">
-            <h3>Plant Details</h3>
-            <p id="water-percentage"></p>
-            <p id="care-tips"></p>
+        <!-- Start Landing Page -->
+        <div class="landing-page">
+          <header>
+            <div class="container">
+              <a href="#" class="logo">
+                <img src="Subject.png" alt="Green Guardian Logo" class="logo-img">
+                Green <b>Guardian</b>
+              </a>
+              <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="plant-health.html">Plant Health</a></li>
+                <li><a href="success-stories.html">Success Stories</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+              </ul>
+              
+            </div>
+          </header>
+          <div class="content">
+            <div class="container">
+              <div class="info">
+                <h1> Nurturing Nature, One Plant at a Time.</h1>
+                <p>Empowering sustainable agriculture through smart plant health detection. Whether it's identifying plant species or providing actionable care tips, Green Guardian ensures your plants thrive naturally.
+
+                </p>
+                <button>Analyze Plant</button>
+              </div>
+              <div class="image">
+                <img src="./3820763.jpg">
+              </div>
+            </div>
           </div>
-        </section>
-      </main>
+        </div>
+        <div class="crops-container">
+          <div class="crop" style="--height-factor: 1.0; --flower-color: #F4A259;"></div>
+          <div class="crop" style="--height-factor: 1.2; --flower-color: #E94F37;"></div>
+          <div class="crop" style="--height-factor: 1.1; --flower-color: #FFD700;"></div>
+          <div class="crop" style="--height-factor: 1.3; --flower-color: #FF6F61;"></div>
+          <div class="crop" style="--height-factor: 1.0; --flower-color: #B19CD9;"></div>
+          <div class="crop" style="--height-factor: 1.0; --flower-color: #f49259;"></div>
+          <div class="crop" style="--height-factor: 1.2; --flower-color: #E94F37;"></div>
+          <div class="crop" style="--height-factor: 1.1; --flower-color: #FFD700;"></div>
+          <div class="crop" style="--height-factor: 1.3; --flower-color: #FF6F61;"></div>
+          <div class="crop" style="--height-factor: 1.0; --flower-color: #B19CD9;"></div>
+        </div>
+        
+        
+        
+        <!-- End Landing Page -->
 </body>
 </html>

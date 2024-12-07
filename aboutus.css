@@ -1,0 +1,129 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #3A3A3A; /* Neutral dark text */
+  }
+header {
+    background-color: #6BA368; /* Grass Green */
+    color: #FFF; /* White text for links */
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF; /* White text for Logo */
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-right: auto; /* Move logo to the left */
+  }
+  
+  header .logo-img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Ensures links are vertically centered */
+    gap: 20px;
+  }
+  
+  header ul li {
+    display: inline-block;
+  }
+  
+  header ul a {
+    text-decoration: none;
+    color: #FFF; /* White text for links */
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px; /* Rounded Links */
+    transition: background-color 0.3s ease;
+  }
+  
+  header ul a:hover {
+    background-color: #F4A259; /* Golden Yellow for Hover */
+    color: #FFF; /* Retain white text on hover */
+  }
+  
+
+
+
+
+/* About Page Styles */
+.about-page .content {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-page .content h1 {
+    font-size: 2.5rem;
+    color: #4B5320; /* Olive Green */
+    margin-bottom: 20px;
+}
+
+.about-page .content p {
+    font-size: 1rem;
+    color: #6C4F3D; /* Brown */
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.about-page .team-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-page .team-member {
+    background: #FFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-page .team-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.about-page .team-member h3 {
+    font-size: 1.2rem;
+    color: #4B5320;
+    margin-bottom: 5px;
+}
+
+.about-page .team-member p {
+    font-size: 0.9rem;
+    color: #805E48;
+}
+
+/* Highlight active link */
+header .links a.active {
+    background-color: #F4A259; /* Golden Yellow */
+    color: #FFF;
+}
