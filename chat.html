@@ -1,25 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat with Specialist</title>
-  <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with an Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFECD1;
+            margin: 0;
+            padding: 0;
+            color: #3A3A3A;
+        }
+        
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Landing Page */
+
+/* Updated Header */
+/* Updated Header */
+header {
+  background-color: #6BA368; /* Grass Green */
+  color: #FFF; /* White text for links */
+  width: 100%;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #FFF; /* White text for Logo */
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: auto; /* Move logo to the left */
+}
+
+header .logo-img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Ensures links are vertically centered */
+  gap: 20px;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul a {
+  text-decoration: none;
+  color: #FFF; /* White text for links */
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px; /* Rounded Links */
+  transition: background-color 0.3s ease;
+}
+
+header ul a:hover {
+  background-color: #F4A259; /* Golden Yellow for Hover */
+  color: #FFF; /* Retain white text on hover */
+}
+       
+
+        .chat-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: calc(100vh - 60px);
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .chat-header {
+            background-color: #4B5320;
+            color: #fff;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background-color: #f9f9f9;
+        }
+
+        .chat-message {
+            max-width: 70%;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .chat-message.user {
+            align-self: flex-end;
+            background-color: #6BA368;
+            color: #fff;
+        }
+
+        .chat-message.expert {
+            align-self: flex-start;
+            background-color: #e0e0e0;
+            color: #3A3A3A;
+        }
+
+        .chat-input {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .chat-input button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            border: none;
+            background-color: #6BA368;
+            color: #fff;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .chat-input button:hover {
+            background-color: #4B5320;
+        }
+
+        footer {
+            background-color: #6BA368;
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Chat with a Specialist</h1>
-  </header>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./Subject.png" alt="Green Guardian Logo" class="logo-img">
+                Green <b>Guardian</b>
+            </a>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="plant.html">Plant Health</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+            </ul>
+        </div>
+    </header>
 
-  <main>
-    <section id="chat">
-      <textarea id="chat-box" placeholder="Type your message..."></textarea>
-      <button id="send-chat">Send</button>
-    </section>
-  </main>
+    <main>
+        <div class="chat-section">
+            <div class="chat-header">Chat with an Expert</div>
 
-  <footer>
-    <p>&copy; 2024 Sustainable Agriculture</p>
-  </footer>
+            <div class="chat-messages">
+               
+            </div>
+
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message here...">
+                <button>Send</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Green Guardian. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../chat.js"></script>
 </body>
 </html>

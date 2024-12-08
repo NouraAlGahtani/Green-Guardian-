@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Scanning Results</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./Subject.png" alt="Green Guardian Logo" class="logo-img">
+                Green <b>Guardian</b>
+            </a>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="plant.html">Plant Health</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="results-section">
+            <div class="container">
+                <!-- Plant Image and Name Section -->
+                <div class="plant-info">
+                    <img src="./Rubber-Plant-Ficus-elastica-Robusta-small_7156ec91-3d08-4301-8507-a401e4d70a51.jpg.webp" alt="Plant Name" class="plant-img">
+                    <h2 class="plant-name">Ficus Elastica (Rubber Plant)</h2>
+                </div>
+
+                <h1 class="main-title">Plant Scanning Results</h1>
+                <div class="stats">
+                    <div class="stat-block">
+                        <h3>Water Level</h3>
+                        <p>70% Optimal</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="stat-block">
+                        <h3>Soil Nutrition</h3>
+                        <p>85% Sufficient</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%; background-color: #6BA368;"></div>
+                        </div>
+                    </div>
+                    <div class="stat-block">
+                        <h3>Sunlight Exposure</h3>
+                        <p>60% Adequate</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%; background-color: #F4A259;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="care-tips">
+                    <h2>Care Tips</h2>
+                    <ul>
+                        <li>Water the plant moderately, ensuring the soil remains moist but not soggy.</li>
+                        <li>Use organic fertilizers to enhance soil nutrition.</li>
+                        <li>Place the plant in an area with adequate sunlight for at least 6 hours daily.</li>
+                        <li>Regularly check for pests and take necessary measures to prevent infestations.</li>
+                    </ul>
+                </div>
+
+                <div class="expert-contact">
+                    <h2>Need Expert Advice?</h2>
+                    <p>Contact one of our plant health experts for personalized guidance and advanced care solutions.</p>
+                    <a href="chat.html" class="contact-btn">Contact an Expert</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Green Guardian. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            color: #3A3A3A;
+            font-family:monospace;
+        }
+
+        header {
+            background-color: #6BA368;
+            padding: 15px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header .logo {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        header .links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header .links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .results-section {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .main-title {
+            text-align: center;
+            color: #4B5320;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .plant-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .plant-img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .plant-name {
+            font-size: 1.8rem;
+            color: #4B5320;
+            margin: 0;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .stat-block {
+            text-align: center;
+            width: 30%;
+        }
+
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .progress {
+            height: 15px;
+            background-color: #6BA368;
+            border-radius: 10px;
+        }
+
+        .care-tips {
+            margin: 40px 0;
+        }
+
+        .care-tips ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .care-tips li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .care-tips li:before {
+            content: '\2022';
+            color: #6BA368;
+            font-weight: bold;
+            display: inline-block;
+            width: 15px;
+            margin-left: -15px;
+        }
+
+        .expert-contact {
+            text-align: center;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6BA368;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-btn:hover {
+            background-color: #4B5320;
+        }
+
+        footer {
+            background-color: #6BA368;
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">Green Guardian</div>
+      <nav class="menu">
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+        <a href="./index.html">Logout</a>
+      </nav>
+      <footer class="footer">© 2024 Green Guardian</footer>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <div class="title">Welcome Back, <strong>Jwana!</strong></div>
+        <div class="user-info">
+          <img src="user-avatar.png" alt="User Avatar">
+          <span>Jwana Barazi</span>
+        </div>
+      </header>
+
+      <!-- Dashboard Cards -->
+      <section class="cards-container">
+        <div class="card">
+          <h3>Today's Tasks</h3>
+          <p>Water 5 plants and check soil health for 3 crops.</p>
+          <div class="cta">
+            <a href="#">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Community Updates</h3>
+          <p>Join the Green Guardian gardening contest happening this weekend!</p>
+          <div class="cta">
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Leaderboard</h3>
+          <p>You are currently ranked <strong>#5</strong> in your region. Keep going!</p>
+          <div class="cta">
+            <a href="#">View Leaderboard</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- History Section -->
+      <section class="history-section">
+        <h2 class="section-title">Last Plants Scanned</h2>
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Plant Name</th>
+              <th>Scan Date</th>
+              <th>Health Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tomato</td>
+              <td>December 6, 2024</td>
+              <td><span class="status healthy">Healthy</span></td>
+              <td><a href="#" class="action-link">View Details</a></td>
+            </tr>
+            <tr>
+              <td>Rose</td>
+              <td>December 5, 2024</td>
+              <td><span class="status warning">Needs Water</span></td>
+              <td><a href="#" class="action-link">View Details</a></td>
+            </tr>
+            <tr>
+              <td>Basil</td>
+              <td>December 3, 2024</td>
+              <td><span class="status danger">Pests Detected</span></td>
+              <td><a href="#" class="action-link">View Details</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Events Section -->
+      <section class="events-section">
+        <h2 class="section-title">Events You Booked</h2>
+        <div class="events-container">
+          <div class="event-card">
+            <img src="event-icon1.png" alt="Event Icon">
+            <h3>Gardening Contest</h3>
+            <p>December 10, 2024</p>
+            <p><strong>Location:</strong> Greenfield Park</p>
+            <a href="#" class="event-details-link">View Details</a>
+          </div>
+          <div class="event-card">
+            <img src="event-icon2.png" alt="Event Icon">
+            <h3>Organic Farming Workshop</h3>
+            <p>December 15, 2024</p>
+            <p><strong>Location:</strong> EcoHub Center</p>
+            <a href="#" class="event-details-link">View Details</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plant Watering Timer -->
+      <section class="watering-timer-section">
+        <h2 class="section-title">Next Plant Watering</h2>
+        <div class="watering-timer">
+          <div class="timer-card">
+            <h3>Tomato Plant</h3>
+            <p>Next Watering: <strong>2 hours 15 minutes</strong></p>
+            <img src="plant-icon1.png" alt="Plant Icon">
+          </div>
+          <div class="timer-card">
+            <h3>Basil</h3>
+            <p>Next Watering: <strong>6 hours 45 minutes</strong></p>
+            <img src="plant-icon2.png" alt="Plant Icon">
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

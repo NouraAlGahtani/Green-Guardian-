@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Scanning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./Subject.png" alt="Green Guardian Logo" class="logo-img">
+                Green <b>Guardian</b>
+            </a>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="plant.html">Plant Health</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="scan-section">
+            <div class="container">
+                <!-- Upload Section -->
+                <div class="upload-section">
+                    <h1 class="main-title">Scan Your Plant</h1>
+                    <p>Upload an image of your plant to analyze its health and get detailed care tips.</p>
+                    <div class="upload-container">
+                        <label for="upload-button" class="upload-btn">Upload Image</label>
+                        <input type="file" id="upload-button" accept="image/*" style="display: none;">
+                        <div class="image-preview" id="image-preview">
+                            <p>No image uploaded</p>
+                        </div>
+                    </div>
+                    <a href="plant.html" class="scan-btn">Scan</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Green Guardian. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            color: #3A3A3A;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        header {
+            background-color: #6BA368;
+            padding: 15px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header .logo {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        header .links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header .links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .scan-section {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .main-title {
+            color: #4B5320;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .upload-container {
+            margin: 20px 0;
+        }
+
+        .upload-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6BA368;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .upload-btn:hover {
+            background-color: #4B5320;
+        }
+
+        .image-preview {
+            margin-top: 20px;
+            width: 300px;
+            height: 300px;
+            border: 2px dashed #6BA368;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #fff;
+            color: #6BA368;
+            border-radius: 10px;
+        }
+
+        .image-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .scan-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #F4A259;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .scan-btn:hover {
+            background-color: #D9843B;
+        }
+
+        footer {
+            background-color: #6BA368;
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        const uploadButton = document.getElementById('upload-button');
+        const imagePreview = document.getElementById('image-preview');
+
+        uploadButton.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    imagePreview.innerHTML = `<img src="${e.target.result}" alt="Uploaded Image">`;
+                };
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.innerHTML = `<p>No image uploaded</p>`;
+            }
+        });
+    </script>
+</body>
+</html>
